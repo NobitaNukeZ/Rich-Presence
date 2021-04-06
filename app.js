@@ -6,10 +6,11 @@ require('dotenv').config(); // Requiring the content of our .env file.
 (async () => {
     client.on('ready', async () => { // Calling the ready event.
         await client.setActivity({ // Setting the Rich Presence Activity based on what is passed in here.
-            buttons: [{ label: "Button Title Here", url: "Link For Button Here" }],
-            details: "Description",
-            largeImageKey: "rpc_icon",
-            largeImageText: "This text is shown when hovering over the largeImageKey in Discord."
+            buttons: [{ label: "JOIN VC", url: "https://discord.gg/5ZrDCeNe89" }, { label: "JOIN SERVER", url: "https://discord.gg/bMQuSwcNJc" } ],
+            details: "IX TOWN",
+            state: "IN VC (4 OF 5)"
+            largeImageKey: "large",
+            largeImageText: "IX TOWN"
         }).catch(err => console.log(err));
 
         console.log("Discord Rich Presence has been enabled.");
